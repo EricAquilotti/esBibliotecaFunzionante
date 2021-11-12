@@ -1,0 +1,30 @@
+﻿<Window x:Class="esBibliotecaFunzionante.WindowBiblioteca"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:esBibliotecaFunzionante"
+        mc:Ignorable="d"
+        Title="WindowBiblioteca" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="lst_libri" HorizontalAlignment="Left" Height="311" Margin="10,98,0,0" VerticalAlignment="Top" Width="222"/>
+        <Label Content="CERCA:" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txt_cerca" HorizontalAlignment="Left" Height="23" Margin="71,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Button x:Name="btn_cerca" Content="🔍" HorizontalAlignment="Left" Margin="196,31,0,0" VerticalAlignment="Top" Width="36" FontSize="16" Click="btn_cerca_Click"/>
+        <CheckBox x:Name="chk_titolo" Content="Titolo" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <CheckBox x:Name="chk_autore" Content="Autore" HorizontalAlignment="Left" Margin="143,63,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Titolo: " HorizontalAlignment="Left" Margin="601,88,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txt_titolo" HorizontalAlignment="Left" Height="23" Margin="662,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Label Content="Autore: " HorizontalAlignment="Left" Margin="584,120,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txt_autore" HorizontalAlignment="Left" Height="23" Margin="662,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Label Content="Data pubblicazione: " HorizontalAlignment="Left" Margin="508,156,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txt_dataPubblicazione" HorizontalAlignment="Left" Height="23" Margin="662,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Label Content="Editore: " HorizontalAlignment="Left" Margin="594,192,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txt_editore" HorizontalAlignment="Left" Height="23" Margin="662,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Label Content="N pagine: " HorizontalAlignment="Left" Margin="577,223,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="txt_nPagine" HorizontalAlignment="Left" Height="23" Margin="662,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Button x:Name="btn_aggiungi" Content="AGGIUNGI" HorizontalAlignment="Left" Margin="626,259,0,0" VerticalAlignment="Top" Width="120" FontSize="16" Click="btn_aggiungi_Click"/>
+        <Label x:Name="lbl_intestazione" Content="BIBLIOTECA " HorizontalAlignment="Left" Margin="271,3,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+    </Grid>
+</Window>
